@@ -1,15 +1,23 @@
 import React from "react";
 
-// State concept (Also, Controlled Components used here)
+// React Class Component demonstrating STATE and CONTROLLED COMPONENTS
 export default class App extends React.Component {
     constructor(props) {
         super(props);
+        // Initializing the component state
         this.state = {
-            empname: 'Ram',
-            bManager: false
+            empname: 'Ram', // Stores employee name
+            bManager: false // Boolean to indicate if the user is a Manager
         };
     }
 
+/**
+     * handleTextInput
+     * ----------------
+     * Event handler for the text input field.
+     * It updates 'empname' in the state when the user types in the input box.
+     * We use 'setState' method to update state in React.
+     */
     handleTextInput(e) {
         this.setState({ empname: e.target.value }) // To setState, we are providing object as parameter
     }
@@ -22,6 +30,13 @@ export default class App extends React.Component {
 */
 
     // Correct way for setting state based on previous state value = Through Arrow function
+    /**
+     * handleCheckbox (Correct Way)
+     * -----------------------------
+     * Updates the 'bManager' value based on the previous state.
+     * Why use previous state? Because state updates in React are asynchronous.
+     * If you use 'this.state' directly, there might be cases where state is not updated as expected.
+     */
     handleCheckbox() {
         this.setState((prevState) =>  ({
             bManager: !prevState.bManager
@@ -29,7 +44,8 @@ export default class App extends React.Component {
     }
 
     render() {
-        let role = this.state.bManager ? "Manager" : "Employee"; //  ternary operator
+// Using ternary operator to decide the role text based on 'bManager' value
+        let role = this.state.bManager ? "Manager" : "Employee"; 
 
         return (
             <>
