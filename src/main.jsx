@@ -11,7 +11,8 @@ import { createRoot } from 'react-dom/client'
 // import App from './01_Assignment/01_Assignment/App'
 // import App from './06_ref/App'
 // import App from './07_defaultProps/App'
-import App from './08_componentLifeCycle/App'
+// import App from './08_componentLifeCycle/App'
+import App from './09_composableComponents/App'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
