@@ -1,0 +1,3 @@
+Higher Order Components
+========================
+A function that takes a component as parameter and returns a new component.
