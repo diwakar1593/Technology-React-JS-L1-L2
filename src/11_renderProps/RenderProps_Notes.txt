@@ -1,0 +1,3 @@
+Render Props
+==============
+A render prop is where a component's prop is assigned a function and this is called in the render method of the component.
