@@ -1,0 +1,16 @@
+Formik
+=======
+Library for form handling. You can use the Higher Order Component approach or Render Props approach or Hook approach.
+
+1) Setting of initial values in a form.     // writing mapPropsToValues function
+2) Event handling for the various form fields   // fields
+3) Validation   // Yup (errors, touched)
+4) Handling Submission of the form.
+
+https://formik.org/doc/overview
+
+Yup   - Validation
+=============
+Yup provides a variety of schema types for validation which can be referred to in the Yup documentation.
+
+https://github.com/jquense/yup
