@@ -1,0 +1,7 @@
+Error Boundary
+================
+A class component that implements either on or both of the lifecycle methods "getDerivedStateFromError", "componentDidCatch" becomes an error boundary.
+
+"getDerivedStateFromError" method is used to render a fallback UI after an error is thrown.
+
+"componentDidCatch" method is used to log the error information.
