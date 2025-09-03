@@ -1,0 +1,1 @@
+// Implementation using functional component / React Hooks is much simpler
