@@ -20,7 +20,8 @@ import { createRoot } from 'react-dom/client'
 // import App from './12_formHandling/App'
 // import App from './13_errorBoundary/App'
 // import App from './14_hooks_useState/App'
-import App from './15_hooks_useEffect/App'
+// import App from './15_hooks_useEffect/App'
+import App from './15a_hooks_useEffect/App'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
