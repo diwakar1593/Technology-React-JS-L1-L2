@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MultipleStateDataComponent from "./MultipleStateDataComponent";
 
 /*
 const CheckboxComponent = () => {
@@ -60,31 +61,34 @@ const FullNameComponent = () => {
 }
 */
 
-const EmployeesComponent = () => {
-    const [employees, setEmployees] = useState([]);
-    const addNewEmployee = () =>setEmployees([...employees, `Emp${employees.length}`]);
+const EmployeesComponent = () =>
+{
+    const [ employees, setEmployees ] = useState( [] );
+    const addNewEmployee = () => setEmployees( [ ...employees, `Emp${ employees.length }` ] );
 
     return (
         <>
             <h3>useState - array</h3>
-            <button onClick={() => addNewEmployee()}>Add Employee</button>
+            <button onClick={ () => addNewEmployee() }>Add Employee</button>
             <ul>
-                {employees.map((employee,index) => (
-                    <li key={index}>{employee}</li>
-                ))}
+                { employees.map( ( employee, index ) => (
+                    <li key={ index }>{ employee }</li>
+                ) ) }
             </ul>
         </>
     );
 }
-const App = (props) => {
+const App = ( props ) =>
+{
     return (
         <>
             <h2>State Demo using React Hooks</h2>
             {
-            /* <CheckboxComponent />
-            <TitleComponent />
-            <FullNameComponent /> */
-            <EmployeesComponent />
+                /* <CheckboxComponent />
+                <TitleComponent />
+                <FullNameComponent />
+                <EmployeesComponent /> */
+                <MultipleStateDataComponent />
             }
         </>
     );
