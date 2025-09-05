@@ -1,5 +1,10 @@
 import React from "react";
-import { createBrowserRouter, NavLink, Outlet, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, NavLink, Outlet, RouterProvider, Navigate } from "react-router-dom";
+import AllCommentsPage from "./AllCommentsPage";
+import AboutPage from "./About";
+import AddCommentPage from "./AddCommentPage";
+import CommentDetailPage from "./CommentDetailPage";
+import NotFoundPage from "./NotFound";
 
 const MainNavigation = () => {
     return (
@@ -25,7 +30,33 @@ const Layout = () => {
 
 const router = createBrowserRouter([
     {
-        element: <Layout />
+        element: <Layout />,
+        children: [
+            {
+                path: '/',
+                element: <AllCommentsPage />
+            },
+            {
+                path: "/addComment",
+                element: <AddCommentPage />
+            },
+            {
+                path: "/comment/:id",
+                element: <CommentDetailPage />
+            },
+            {
+                path: "/about",
+                element: <AboutPage />
+            },
+            {
+                path: "/about-wipro",
+                element: <Navigate to="/about" replace />
+            },
+            {
+                path: "*",
+                element: <NotFoundPage />
+            },
+        ]
     }
 ])
 

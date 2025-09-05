@@ -7,7 +7,7 @@ export default {
             "text": "React is simple"
         },
         {
-            "id": 1,
+            "id": 2,
             "author": "Rohit",
             "text": "React is fast"
         },
