@@ -3,6 +3,10 @@ import { createRoot } from 'react-dom/client'
 // import './index.css'
 // import App from './App.jsx'
 
+/*************************************************** */
+
+import 'bootstrap/dist/css/bootstrap.min.css'; // Only for bootstrap 
+
 // import App from './01_welcome/App'
 // import App from './02_componentReuse/App'
 // import App from './03_properties/App.jsx' 
@@ -23,7 +27,8 @@ import { createRoot } from 'react-dom/client'
 // import App from './15_hooks_useEffect/App'
 // import App from './15a_hooks_useEffect/App'
 // import App from './16_reactrouter/App'
-import App from './17_transition/App'
+// import App from './17_transition/App'
+import App from './18_css_bootstrap/App'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
