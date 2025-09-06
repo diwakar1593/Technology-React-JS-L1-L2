@@ -28,7 +28,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Only for bootstrap
 // import App from './15a_hooks_useEffect/App'
 // import App from './16_reactrouter/App'
 // import App from './17_transition/App'
-import App from './18_css_bootstrap/App'
+// import App from './18_css_bootstrap/App'
+import App from './19_lazyloading_codesplitting/App'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
