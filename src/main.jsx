@@ -35,7 +35,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Only for bootstrap
 // import App from './21_hooks_useContext/App'
 // import App from './21a_hooks_useContext/App';
 // import App from './22_pureComponents_memo/AppCopy'
-import App from './23_hooks_useCallback/App';
+// import App from './23_hooks_useCallback/App';
+import App from './24_hooks_useMemo/App';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
