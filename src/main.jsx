@@ -30,7 +30,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'; // Only for bootstrap
 // import App from './17_transition/App'
 // import App from './18_css_bootstrap/App'
 // import App from './19_lazyloading_codesplitting/App'
-import App from './20_contextApi/App'
+// import App from './20_contextApi/App'
+import App from './20a_contextApi/App'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
