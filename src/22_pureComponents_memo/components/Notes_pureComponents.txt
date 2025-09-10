@@ -1,0 +1,8 @@
+Pure Component
+==============
+A Pure Component implements the should Component Update lifecycle methods by performing a SHALLOW comparison on the props and state of the component.
+If there is no difference, the component is not re-rendered, which gives performance boost.
+
+React.Memo
+==============
+To make functional component pure, wrap functional components with higher order component, React.Memo.
