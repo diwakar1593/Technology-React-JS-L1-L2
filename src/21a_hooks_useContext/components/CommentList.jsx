@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import Comment from "./Comment";
 import CommentApi from "../data/CommentApi";
 import { CommentContext } from "./CommentContext";
@@ -13,7 +13,7 @@ const CommentList = () => {
     const getCommentNodes = () => {
         const commentNodes = commentContextVal && commentContextVal.comments.map(comment => {
             return (
-                <Comment key={comment.id} id={comment.id} author={comment.author} onDelete{(id) => deleteComment(id)}>
+                <Comment key={comment.id} id={comment.id} author={comment.author} onDelete={(id) => deleteComment(id)}>
                     {comment.text}
                 </Comment>
             )
@@ -30,9 +30,7 @@ const CommentList = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    <CommentConsumer>
                         {getCommentNodes(commentContextVal)}
-                    </CommentConsumer>
                 </tbody>
             </table>
         </div>

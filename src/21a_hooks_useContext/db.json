@@ -14,6 +14,11 @@
       "id": 3,
       "author": "Vinay",
       "text": "React can be used to develop SPA"
+    },
+    {
+      "author": "Rohit",
+      "text": "Hello React!",
+      "id": 4
     }
   ]
 }

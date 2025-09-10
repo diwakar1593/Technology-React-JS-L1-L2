@@ -21,7 +21,7 @@ const CommentForm = (props) => {
                     <input type="text" onInput={e => setComment({...comment, text: e.target.value})} defaultValue={comment.text} />
                 </label>
                 <br/><br/>
-                <input type="submit" value="Save" onClick={(e) => this.onSubmit(e)} />
+                <input type="submit" value="Save" onClick={(e) => onSubmit(e)} />
             </form>
         );
 }
